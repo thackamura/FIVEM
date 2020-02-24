@@ -9,5 +9,5 @@ set Hr=%DateTime:~8,2%
 set Min=%DateTime:~10,2%
 set Sec=%DateTime:~12,2%
 
-set BackupName= ph2_zbglefvgetvs5zn__%Yr%-%Mon%-%Day%_(%Hr%-%Min%-%Sec%)
-mysqldump --user=root --password=Lemdp --databases NomdelaBase > "C:\Users\Administrateur\Desktop\backups\%BackupName%.sql"
+set BackupName= NomdelaBase__%Yr%-%Mon%-%Day%_(%Hr%-%Min%-%Sec%)
+mysqldump --user=root --password=Lemotdepasse --databases NomdelaBase > "C:\Users\Administrateur\Desktop\backups\%BackupName%.sql"
